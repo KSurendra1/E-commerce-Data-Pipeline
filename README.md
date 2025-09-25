@@ -1,12 +1,12 @@
-E-commerce Data Warehouse Pipeline
+# E-commerce Data Warehouse Pipeline
 This project demonstrates the design and implementation of a robust data pipeline for an e-commerce business. It showcases foundational skills in modern data engineering, including Extract, Load, and Transform (ELT) processes, data warehousing, and data visualization.
 
-🚀 The Motivation
+## 🚀 The Motivation
 The core goal of this project is to take raw, messy e-commerce sales data and transform it into a clean, structured, and analytics-ready format. This addresses a common business problem: how to turn raw transactional data into a valuable asset for reporting and business intelligence.
 
 By creating a data warehouse, we enable fast and efficient querying, allowing business analysts to easily answer critical questions about sales trends, customer behavior, and regional performance.
 
-⚙️ Technologies Used
+## ⚙️ Technologies Used
 Python: The primary programming language for orchestrating the data pipeline.
 
 Pandas: Used for data manipulation and initial cleaning of the raw CSV file.
@@ -21,7 +21,7 @@ SQL: Used for all data transformations and to perform business analysis.
 
 Git: Version control for the entire project.
 
-📊 Project Architecture
+## 📊 Project Architecture
 The pipeline follows a modern ELT (Extract, Load, Transform) approach.
 
 Extract & Load: The Python script extracts data from a raw CSV file and loads it directly into a staging_ecommerce_sales table in the PostgreSQL database.
@@ -34,7 +34,7 @@ fact_sales: A fact table with sales transactions, linked to the dim_customers ta
 
 Analyze & Visualize: The clean, final data is ready for analysis using the queries in reports.sql and for visualization using the visualize_data.py script.
 
-📁 Project Directory Structure
+## 📁 Project Directory Structure
 E-commerce-Data-Warehouse/
 ├── data/
 │   ├── raw/
@@ -51,7 +51,7 @@ E-commerce-Data-Warehouse/
 ├── README.md
 └── requirements.txt
 
-🔧 Setup and Execution
+## 🔧 Setup and Execution
 Follow these steps to set up and run the project locally.
 
 Step 1: Clone the Repository
@@ -62,9 +62,9 @@ Step 2: Set Up the Python Environment
 Create a virtual environment (recommended) and install the dependencies:
 
 python -m venv venv
-# On Windows:
+On Windows:
 .\venv\Scripts\activate
-# On macOS/Linux:
+On macOS/Linux:
 source venv/bin/activate
 
 pip install -r requirements.txt
